@@ -1,0 +1,25 @@
+Day 1 19 Jan 
+
+
+3) html have tags.
+4) Tags can have contentes. (text and/or tags)
+5) Tags can have attributes.
+6) 
+
+
+
+
+Tags
+<p> Paragraphs
+<h1>...<h6> heding , for whats importent 
+<a> : Link  
+		href = "" : Place the link here
+		text = text for click 
+		
+ <img> : to set an image.		
+		src = link to the image
+ 
+ ============ Does not have closing tags ==================
+ 
+ <img>
+ <br>

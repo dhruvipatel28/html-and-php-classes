@@ -1,0 +1,70 @@
+======================= Question 1 ========================
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPy7ZnI46zizXRVoXLbV4Gl6LamFU6g5pqtJj1ijxnO8i-gJWp"
+style="border:dashed 3px red"
+>
+
+<p style="font-style:italic"> I am Cute</p>
+</body>
+</html>
+
+
+======================= Question 2 ========================
+
+
+
+<h1 style="color:red ; text-decoration:underline; letter-spacing:13px "    >
+
+
+
+======================= Question 3 ========================
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<style type="text/css">
+
+#for_div
+{
+border:solid ; width:550px ; text-align:center
+}
+
+#for_h1
+{
+color:red ;
+}
+
+#for_img
+{
+width:500px; position:inside; margin=30px
+}
+
+#for_p
+{
+font-style:italic
+}
+</style>
+
+
+</head>
+<body>
+
+<div id="for_div">
+
+<h1 id="for_h1"> Chicken Clay Pot </h1>
+<img src="https://images-gmi-pmc.edge-generalmills.com/3f6bdc85-6a25-492a-bb8d-053652e31853.jpg"
+	id="for_img">
+<p id="for_p">Crispy rice baked in clay pot</p>
+</div>
+</body>
+</html>
