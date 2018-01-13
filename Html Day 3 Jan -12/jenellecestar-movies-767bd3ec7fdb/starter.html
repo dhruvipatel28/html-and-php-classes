@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+  <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open Sans" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    
+	<style type = "text/css">
+ 	/*---------------------------------
+		CSS to setup the webpage 
+	----------------------------------*/
+	* {
+      box-sizing: border-box;
+    }
+    .clearfix:before {
+      content:"";
+      display:table;
+    }
+    .clearfix:after {
+      content:"";
+      clear:both;
+      display:table;
+    }
+
+	/*---------------------------------
+		Main CSS 
+	----------------------------------*/
+	
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      font-weight:700;
+    }
+    .wrapper {
+      width:1440px;
+      max-width:90%;
+      margin: 0 auto;
+    }
+
+    /*---------------------------------
+		CSS for menu header 
+	----------------------------------*/
+	
+	.logo {
+		float:left;
+	}
+	
+	.menu {
+		float:right;
+		font-size:15px;
+		padding-top:20px;
+	}
+   
+	.menu a {
+		text-decoration:none;
+		color:#424242;
+		margin-left:28px;
+	}
+   
+	.menu a:hover {
+		color:#2EC486;
+	}
+   
+   
+   
+    /*---------------------------------
+		Banner section css 
+	----------------------------------*/
+	#banner {
+ 		background-color:#212121;
+ 		width:100%;
+ 		padding-top:100px;
+ 		padding-bottom:100px;
+ 	}
+    
+ 	.banner-wrapper {
+ 		width:900px;
+ 		max-width:90%;
+ 		margin: 0 auto;
+ 		
+ 		display:flex;
+ 		justify-content:center;
+ 		align-items:center;
+ 	}
+    
+ 	#poster {
+ 		width:275px;
+ 		float:left;
+ 	}
+ 	
+ 	/* div holding all the movie info */
+ 	#featured-movie {
+ 		float:left;
+ 		margin-left:100px;
+ 	}
+ 	
+ 	/* Avengers: Infinity War (2018) */
+ 	.featured-movie-title {
+ 		color:white;
+ 	}
+ 	
+ 	/* R | 120 min | Action, Adventure Fantasy | may 4 2018 */
+ 	.featured-movie-info {
+ 		color:white;
+ 		font-size:12px;
+ 		font-weight:700;
+ 	}
+ 	
+ 	/* The Avengers and their allies must be willing to sacrifice all */
+ 	.featured-movie-description {
+ 		color:#ccc;
+ 		line-height:32px;
+ 	}
+    
+ 	.rating {
+ 		color:#2EC4B6;
+ 	}
+		
+   
+   
+    /*---------------------------------
+		CSS for coming soon section 
+	----------------------------------*/
+   
+   
+    /*---------------------------------
+		Newsletter css 
+	----------------------------------*/
+   
+   
+    /*---------------------------------
+		Footer css
+	/*----------------------------------*/
+	
+	footer
+	{
+		background-color:#8F2D56;
+		text-align:center;
+		padding-top:20px;
+		padding-bottom:10px;
+	}
+	
+   
+   footer-link
+   {
+		color:#CCC;
+		text-decoration:none;
+		font-size:20px;
+   }
+   
+   
+    </style>
+  </head>
+  <body>
+    <header id="top" class="clearfix">
+		<div class="wrapper" style="border:1px solid red;">
+			<h2 class="logo">MOVIEPOSTERS.COM</h2>
+			
+			<div class="menu">
+				<a href="" class="">Movies</a>
+				<a href="" class="">TV Shows</a>
+				<a href="" class="">Buy Tickets</a>
+				<a href="" class="">About Us</a>
+			</div> <!-- // menu -->
+			
+		</div> <!-- // wrapper -->
+	</header> <!-- // header -->
+
+	
+	
+	
+	
+    <section id="banner" class="clearfix">
+		<div class="banner-wrapper">
+			
+			<div id="poster">
+				<img src="images/avengers.jpg" style="width:275px"></img>
+ 			</div> <!-- //poster -->
+ 
+ 
+ 			<div id="featured-movie">
+ 				<h2 class="featured-movie-title">Avengers: Infinity War (2018)</h2>
+ 				
+ 				
+ 				<!-- font awesome in here -->
+ 				<div class="rating">
+ 					<i class="fa fa-star"></i>
+ 					<i class="fa fa-star"></i>
+ 					<i class="fa fa-star"></i>
+ 					<i class="fa fa-star"></i>
+ 					<i class="fa fa-star-o"></i>
+ 				</div>
+ 				
+ 				<p class="featured-movie-description">
+ 					The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.
+ 				</p>
+ 				<p class="featured-movie-info">
+ 					R | 200 min | Action, Adventure, Fantasy | May 4, 2018
+ 				<p>
+ 			</div> <!-- //featured-movie -->
+		</div>
+    </section> <!--// banner -->
+
+	
+	
+	
+	
+	
+	
+	
+    <section id="movies-coming-soon" class="clearfix">
+		<div class="">
+			<h2> Coming Soon </h2>
+			
+			<a href=""> See All </a>
+			
+			<div>
+				<img src="images/posters/12strong.jpg">
+				<h3>12 Strong</h3>
+				<p>PG | 150 min</p>
+			</div>
+			<div>
+				<img src="images/bear.png">
+				<h3>Pitch Perfect 3</h3>
+				<p>PG | 150 min</p>
+			</div>
+			<div>
+				<img src="images/bear.png">
+				<h3>Black Panther</h3>
+				<p>PG | 150 min</p>
+			</div>
+			<div>
+				<img src="images/bear.png">
+				<h3>Paddington 2</h3>
+				<p>PG | 150 min</p>
+			</div>
+			<div>
+				<img src="images/bear.png">
+				<h3>Tomb Raider</h3>
+				<p>PG | 150 min</p>
+			</div>
+			<div>
+				<img src="images/bear.png">
+				<h3>Zootopia</h3>
+				<p>PG | 150 min</p>
+			</div>
+			
+			
+		</div>
+    </section> <!--// movies-coming-soon -->
+
+    <section id="newsletter">
+		<div class="">
+			<h2>Get all the latest movies, news, and trailers delivered to your inbox. Free!</h2>
+			<form>
+				<input type="text" placeholder="Your name">
+				<input type="text" placeholder="Email">
+				<button>SUBSCRIBE</button>
+			</form>
+		</div>
+    </section> <!--//newsletter-->
+
+    <footer class="footer">
+		<a href="" class="footer-link"> Terms and Conditions </a>
+		<a href="" class="footer-link"> Privacy Policy </a>
+		<p class="copyright"> &copy; 2018 MovieTrailers.com </p>
+		
+    </footer> <!--//footer -->
+
+  </body>
+</html>
