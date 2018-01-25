@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <h1> Canvas Example <h1>
+  <canvas id="myCanvas" >
+  </canvas>
+    <script >
+
+      var canvas = document.getElementById('myCanvas');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      var ctx = canvas.getContext("2d");
+
+      var x = -100;
+
+      for(var i=0 ; i<= 8 ; i++)
+      {
+          x = x + 150;//#900C3F
+          ctx.fillStyle = "#581845";
+          ctx.fillRect(x,50,80,80);
+          ctx.fillStyle = "#900C3F";
+          ctx.fillRect(x+5,50+5,70,70);
+          ctx.fillStyle = "#C70039";
+          ctx.fillRect(x+10,50+10,60,60);//#DAF7A6
+          ctx.fillStyle = "#FF5733";
+          ctx.fillRect(x+15,50+15,50,50);
+          ctx.fillStyle = "#FFC300";
+          ctx.fillRect(x+20,50+20,40,40);
+          ctx.fillStyle = "#DAF7A6";
+          ctx.fillRect(x+25,50+25,30,30);
+          ctx.fillStyle = "#581845";
+      }
+
+    </script>
+  </body>
+</html>
