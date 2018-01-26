@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <h1> Animation Example <h1>
+<canvas id="myCanvas" >
+</canvas>
+  <script >
+
+        var canvas = document.getElementById('myCanvas');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        var ctx = canvas.getContext("2d");
+
+
+        var a = 300;
+        function animation_left()
+        {
+            requestAnimationFrame(animation_left);
+            //console.log("Typing to animate");
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            ctx.strokeRect(a,25,50,50);
+            ctx.strokeRect(a,50,50,50);
+            //ctx.strokeRect(200,a,50,50)
+            if(a == 51)
+            {
+                animation_right();
+            }
+            else
+            {
+                a = a - 3;
+            }
+        } //animation_left
+
+        function animation_right()
+        {
+            requestAnimationFrame(animation_right);
+            //console.log("Typing to animate");
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            ctx.strokeRect(a,25,50,50);
+            ctx.strokeRect(a,50,50,50);
+            //ctx.strokeRect(200,a,50,50)
+            a = a + 3;
+            if(a >= 300)
+            {
+                animation_left();
+            }
+        } //animation_right
+
+        animation_left();
+
+  </script>
+</body>
+</html>

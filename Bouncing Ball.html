@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bouncing Ball</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <h1> Animation Example 2 <h1>
+<canvas id="myCanvas" >
+</canvas>
+  <script >
+
+        var canvas = document.getElementById('myCanvas');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        var ctx = canvas.getContext("2d");
+
+
+        var a = 0;
+        var b = 0
+        function animation_left()
+        {
+            requestAnimationFrame(animation_left);
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            ctx.fillStyle = "#17A589";
+            //ctx.fillRect(a,b,50,50);
+
+            ctx.beginPath();
+            ctx.arc(a,b,40,0,10*Math.PI);
+            ctx.fill();
+            ctx.stroke();
+
+            if(a <= 0 || b <= 0)
+            {
+                  xray = Math.random()*23;
+                  yray = Math.random()*36;
+            }
+            if(a >= 700 || b >= 600)
+            {
+                  xray = (Math.random()*-23);
+                  yray = (Math.random()*-36);
+            }
+            a = a + xray;
+            b = b + yray;
+
+        } //animation_left
+        animation_left();
+
+  </script>
+</body>
+</html>
